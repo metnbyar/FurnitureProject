@@ -50,8 +50,10 @@
 ![Login register](https://github.com/user-attachments/assets/3f1ce716-3de1-4c2f-8ccf-1ee38c4fcf91)
 
 ### ADMİN ANASAYFA
-![Admin home].[s2](https://github.com/user-attachments/assets/3ec3cd84-52c0-4121-aaa3-828cf600b017)
+![Admin home]![s2](https://github.com/user-attachments/assets/31867fd3-31e4-4833-90e4-aaba9eab66c4)
+
 
 
 ### API SAYFASI 
-![Api][s3](https://github.com/user-attachments/assets/6c0dee5b-5fc4-43cb-8fd9-b1b0cd8f3b6d)
+![Api]![s3](https://github.com/user-attachments/assets/afbfa63f-6fb1-4297-8596-7ed68d615941)
+
