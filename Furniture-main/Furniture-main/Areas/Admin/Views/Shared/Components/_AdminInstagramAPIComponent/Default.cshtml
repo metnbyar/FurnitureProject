@@ -1,0 +1,60 @@
+﻿@model InstagramViewModel
+
+<div class="col-md-4">
+    <div class="card card-profile">
+        <div class="card-header"
+             style="background-image: url('assets/img/blogpost.jpg')">
+            <div class="profile-picture">
+                <div class="avatar avatar-xl">
+                    <img src=@Model.profile_pic_url
+                  
+                         class="avatar-img rounded-circle" />
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="user-profile text-center">
+                <div class="name">@Model.full_name</div>
+                <div class="job">Yazılım Şirketi</div>
+                <div class="desc"></div>
+                <div class="social-media">
+                    <a class="btn btn-info btn-twitter btn-sm btn-link"
+                       href="#">
+                        <span class="btn-label just-icon">
+                            <i class="icon-social-twitter"></i>
+                        </span>
+                    </a>
+                    <a class="btn btn-primary btn-sm btn-link"
+                       rel="publisher"
+                       href="#">
+                        <span class="btn-label just-icon">
+                            <i class="icon-social-linkedin"></i>
+                        </span>
+                    </a>
+                    <a class="btn btn-danger btn-sm btn-link"
+                       rel="publisher"
+                       href="https://www.instagram.com/bilisimbelsoft/">
+                        <span class="btn-label just-icon">
+                            <i class="icon-social-instagram"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="view-profile">
+                    <a href="https://www.belsoft.com.tr/" class="btn btn-secondary w-100" target="_blank">Profili Görüntüle</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="row user-stats text-center">
+                <div class="col">
+                    <div class="number">@Model.followers</div>
+                    <div class="title">Takipçi Sayısı</div>
+                </div>
+                <div class="col">
+                    <div class="number">@Model.following</div>
+                    <div class="title">Takip Edilen</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

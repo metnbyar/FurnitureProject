@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "ALL API";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="page-inner">
+
+        <div class="row">
+            @* @await Component.InvokeAsync("_AdminWeatherAPIComponent") *@
+        </div>
+        @await Component.InvokeAsync("_AdminInstagramAPIComponent")
+
+    </div>

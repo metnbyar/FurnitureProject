@@ -1,0 +1,38 @@
+﻿@model List<Feature>
+@{
+    ViewData["Title"] = "Öne Çıkanlar";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    var count = 0;
+}
+
+<h1>Index</h1>
+
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Görsel</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td><img src="@item.ImageUrl" style="width:50px;height:50px" /></td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>
+                <a asp-action="DeleteFeature" asp-controller="Feature" asp-route-id="@item.FeatureId" class="btn btn-outline-danger">Sil</a>
+                <a asp-action="UpdateFeature" asp-controller="Feature" asp-route-id="@item.FeatureId" class="btn btn-outline-info">Güncelle</a>
+            </td>
+
+        </tr>
+
+    }
+</table>
+<td><a asp-action="CreateFeature" asp-controller="Feature" class="btn btn-outline-primary">Öne Çıkanlar Ekle</a></td>
+

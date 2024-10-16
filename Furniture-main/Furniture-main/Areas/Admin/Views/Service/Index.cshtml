@@ -1,0 +1,40 @@
+﻿
+@model List<Service>
+@{
+    ViewData["Title"] = "Hizmetlerim";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+@{
+    int count = 0;
+}
+
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th> Görseli</th>
+        <th> Başlık</th>
+        <th>Açıklama</th>
+        <th>İkon</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td><img src="@item.ImageUrl" style="width:50px;height:50px" /></td>
+            <td>@item.Title</td>
+            <td>@item.Description </td>
+            <td>@item.Icon</td>
+            <td>
+                <a asp-action="DeleteService" asp-controller="Service" asp-route-id="@item.ServiceId" class="btn btn-outline-danger">Sil</a>
+                <a asp-action="UpdateService" asp-controller="Service" asp-route-id="@item.ServiceId" class="btn btn-outline-info">Güncelle</a>
+            </td>
+
+        </tr>
+
+    }
+</table>
+<td><a asp-action="CreateService" asp-controller="Service" class="btn btn-outline-primary">Hizmet Ekle</a></td>

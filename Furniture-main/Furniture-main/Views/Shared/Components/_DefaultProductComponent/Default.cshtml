@@ -1,0 +1,34 @@
+﻿@model List<Product>
+
+<div class="product-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Start Column 1 -->
+			<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+				<h2 class="mb-4 section-title">Muhteşem el işçiliği ile tasarlanan ürünler</h2>
+				<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
+				<p><a href="shop.html" class="btn">Ürünlerimizi Keşfedin</a></p>
+			</div>
+			@foreach (var item in Model)
+			{
+				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+					<a class="product-item" href="cart.html">
+						<img src="@item.ImageUrl" class="img-fluid product-thumbnail">
+						<h3 class="product-title">@item.ProductName</h3>
+						<strong class="product-price">@item.Price ₺</strong>
+
+						<span class="icon-cross">
+							<img src="/furni/images/cross.svg" class="img-fluid">
+						</span>
+					</a>
+				</div>
+			}
+			
+		
+			
+
+		</div>
+	</div>
+</div>
+

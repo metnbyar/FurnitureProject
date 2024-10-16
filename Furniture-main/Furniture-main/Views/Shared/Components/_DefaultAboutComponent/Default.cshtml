@@ -1,0 +1,34 @@
+﻿@model List<About>
+
+
+
+<div class="we-help-section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+
+                <div class="imgs-grid">
+                    @foreach (var item in Model)
+                    {
+
+                        <div style="width=" 509px" height="620px"  class="grid grid-1"><img src="@item.Image1"></div>
+                        <div style="width=" 509px" height="620px" class="grid grid-2"><img src="@item.Image2"></div>
+                        <div style="width=" 509px" height="620px" class="grid grid-3"><img src="@item.Image3"></div>
+                    }
+                </div>
+            </div>
+
+            <div class="col-lg-5 ps-lg-5">
+                @foreach (var item in Model)
+                {
+                    <h2 class="section-title mb-4">@item.Title </h2>
+                    <p>
+                        @item.Description
+                    </p>
+                }
+            </div>
+
+
+        </div>
+    </div>
+</div>

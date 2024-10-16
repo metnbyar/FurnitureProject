@@ -1,0 +1,19 @@
+﻿@model Feature
+@{
+    ViewData["Title"] = "Yeni Öne Çıkan Ekle";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<form method="post">
+    <label>Ürün Adı</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+    <label>Ürün Görseli</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+    <label>Açıklaması</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+    <button class="btn btn-outline-primary">Kaydet</button>
+</form>

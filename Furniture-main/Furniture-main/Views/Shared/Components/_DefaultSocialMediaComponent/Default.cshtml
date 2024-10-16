@@ -1,0 +1,13 @@
+﻿@model List<SocialMedia>
+
+
+
+
+<ul class="list-unstyled custom-social">
+    @foreach (var item in Model)
+    {
+        <li><a target="_blank" href="@item.Url"><span class="fa fa-brands @item.Icon"></span></a></li>
+     
+    }
+
+</ul>
