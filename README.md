@@ -54,5 +54,4 @@
 
 
 ### API SAYFASI 
-![Api]
-![s3](https://github.com/user-attachments/assets/6c0dee5b-5fc4-43cb-8fd9-b1b0cd8f3b6d)
+![Api][s3](https://github.com/user-attachments/assets/6c0dee5b-5fc4-43cb-8fd9-b1b0cd8f3b6d)
